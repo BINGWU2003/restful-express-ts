@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "ES6", // 编译后的 JavaScript 版本。
+    "module": "NodeNext", // 指定模块系统，NodeNext 表示使用 Node.js 的 ESM 模块系统。
+    "moduleResolution": "NodeNext", // 指定模块解析策略，"node" 表示使用 Node.js 风格的模块解析。
+    "baseUrl": "src", // 基础目录，用于解析非相对模块的导入。
+    "outDir": "dist", // 指定编译输出目录，编译后的 JavaScript 文件将放在此目录中。
+    "sourceMap": true, // 生成 source map 文件，便于调试。
+    "noImplicitAny": true // 启用严格的类型检查，当 TypeScript 无法推断变量类型时会报错。
+  },
+  "include": [
+    "src/**/*"
+  ] // 包含 src 目录下的所有文件和子目录。
+}
